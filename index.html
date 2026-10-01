@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SK Men's Zone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="top-header">
+
+        <!-- Menu -->
+        <div class="menu-icon">☰</div>
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo-area">
+
+            <img src="images/logo.jpg"
+                 alt="SK Men's Zone Logo"
+                 class="logo-image">
+
+            <div>
+                <h1>SK MEN'S ZONE</h1>
+                <p>PREMIUM MEN'S FASHION</p>
+            </div>
+
+        </a>
+
+        <!-- ICONS -->
+        <div class="header-icons">
+
+            <button onclick="openSearch()">⌕</button>
+
+            <button onclick="showWishlist()">
+                ♡
+                <span id="wishlistCount">0</span>
+            </button>
+
+            <button onclick="showCart()">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="#products">Shop</a>
+
+        <a href="#categories">Categories</a>
+
+        <a href="#contact">Contact</a>
+
+        <a href="admin.html">Admin</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div id="searchBox" class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
+
+</div>
+
+
+<!-- ================= BANNER ================= -->
+
+<section class="banner">
+
+    <img src="images/banners.png"
+         alt="SK Men's Zone Banner">
+
+    <div class="banner-content">
+
+        <h2>STYLE BUILT FOR YOU</h2>
+
+        <p>PREMIUM MEN'S FASHION</p>
+
+        <button onclick="goProducts()">
+            SHOP NOW →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section id="categories" class="categories">
+
+    <h2>Shop By Category</h2>
+
+    <div class="category-buttons">
+
+        <button onclick="filterCategory('All')">
+            All
+        </button>
+
+        <button onclick="filterCategory('Shirts')">
+            Shirts
+        </button>
+
+        <button onclick="filterCategory('T-Shirts')">
+            T-Shirts
+        </button>
+
+        <button onclick="filterCategory('Jeans')">
+            Jeans
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products" class="products-section">
+
+    <h2 class="section-title">
+        <span>—</span>
+        New Arrivals
+        <span>—</span>
+    </h2>
+
+    <div id="productContainer"
+         class="product-grid">
+
+    </div>
+
+</section>
+
+
+<!-- ================= WISHLIST ================= -->
+
+<section id="wishlistSection"
+         class="wishlist-section">
+
+    <h2 class="section-title">
+        <span>—</span>
+        My Wishlist
+        <span>—</span>
+    </h2>
+
+    <div id="wishlistContainer"
+         class="product-grid">
+
+    </div>
+
+</section>
+
+
+<!-- ================= CART ================= -->
+
+<section id="cartSection"
+         class="cart-section">
+
+    <h2 class="section-title">
+        <span>—</span>
+        My Cart
+        <span>—</span>
+    </h2>
+
+    <div id="cartContainer"></div>
+
+    <div class="cart-total">
+
+        Total:
+        ₹<span id="cartTotal">0</span>
+
+    </div>
+
+    <button class="whatsapp-btn"
+            onclick="orderWhatsApp()">
+
+        ORDER ON WHATSAPP
+
+    </button>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+         class="contact-section">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📞
+            </div>
+
+            <h3>Phone</h3>
+
+            <a href="tel:+917200048460">
+                +91 72000 48460
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📧
+            </div>
+
+            <h3>Email</h3>
+
+            <a href="mailto:skmenszone@gmail.com">
+                skmenszone@gmail.com
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📍
+            </div>
+
+            <h3>Location</h3>
+
+            <a href="https://maps.app.goo.gl/zJRYVbrfGgMMSfid8"
+               target="_blank">
+
+                Salem, Tamil Nadu
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <img src="images/logo.jpg"
+             alt="SK Logo">
+
+        <div>
+
+            <h3>SK MEN'S ZONE</h3>
+
+            <p>Premium Men's Fashion Store</p>
+
+        </div>
+
+    </div>
+
+    <p>
+        © 2026 SK Men's Zone. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
